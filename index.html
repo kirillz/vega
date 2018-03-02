@@ -158,11 +158,17 @@
 		<input type="hidden" name="form_subject" value="Form Subject">
 		<!-- END Hidden Required Fields -->
 		
-		<p><i class="fa fa-user"></i><label>Имя: <input type="text" name="Name" placeholder="Ваше имя..." required></label></p><br>
-		<p><i class="fa fa-envelope-square"></i><label>Почта: <input type="text" name="E-mail" placeholder="Ваш E-mail..." required></label></p><br>
-		<p><i class="fa fa-phone-square"></i><label>Телефон: <input type="text" name="Phone" placeholder="Ваш телефон..."></label></p><br>
+		<p><label>Имя/ИНН и Название организации* <input type="text" name="Name" placeholder="Ваше имя..." required></label></p>
+		<p><label>E-Mail <input type="text" name="E-mail" placeholder="Ваш E-mail..." required></label></p>
+		<p><label>Телефон <input type="text" name="Phone" placeholder="Ваш телефон..."></label></p>
+		<p><label>Поле заказа* <textarea name="Order" cols="30" rows="5"></textarea></label></p>
+		<div class="check">
+			<p><label>Доставка <input type="checkbox" name="Dostavka"></label></p>
+		<p><label>Отправка <input type="checkbox" name="Otpravka"></label></p>
+		<p><label>Самовывоз <input type="checkbox" name="Samovyvoz"></label></p>
+		</div>
+		
 		<button>Отправить</button>
-
 	</form>
 
 </div>
