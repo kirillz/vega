@@ -111,7 +111,7 @@
 							<div class="phone"><i class="fa fa-phone"></i><a href="tel:+7495756778">7 495 675 67 78</a></div>
 							<br><br>
 							<i class="fa fa-envelope"></i>vega@gmail.com <br>
-							<a href="#" class="button">Оставить заявку</a>
+							<a href="form" class="button popup">Оставить заявку</a>
 
 
 						</div>
@@ -141,12 +141,32 @@
 							</ul>
 						</div>
 						<div class="col-md-2">
-							<a href="form" class="button">Оставить заявку</a>
+							<a href="form" class="button popup">Оставить заявку</a>
 						</div>
 					</div>
 				</div>
 	</section>
 </div>
+
+<!-- Блок для скрытия скрытых элементов -->
+<div class="hidden">
+	<form>
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Site Name">
+		<input type="hidden" name="admin_email" value="kirillz.yand@yandex.ru">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		<!-- END Hidden Required Fields -->
+		
+		<p><i class="fa fa-user"></i><label>Имя: <input type="text" name="Name" placeholder="Ваше имя..." required></label></p><br>
+		<p><i class="fa fa-envelope-square"></i><label>Почта: <input type="text" name="E-mail" placeholder="Ваш E-mail..." required></label></p><br>
+		<p><i class="fa fa-phone-square"></i><label>Телефон: <input type="text" name="Phone" placeholder="Ваш телефон..."></label></p><br>
+		<button>Отправить</button>
+
+	</form>
+
+</div>
+
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
